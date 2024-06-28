@@ -44,20 +44,18 @@
     function changeLang() { 
         let select = document.getElementById('selectLangage');
         let language = select.value;
+        let j = document.getElementById("jp");
 
         if (language === "selected_jpn") {
-            let japa = document.getElementById("jp");
-            japa.style.display ="block";
+            j.style.display ="block";
             let engl = document.getElementById("eng");
             engl.style.display ="none";
         }     else if (language === "selected_en") {
             let engli = document.getElementById("eng");
             engli.style.display ="block";
-            let japan =document.getElementById("jp");
-            japan.style.display ="none";
+            j.style.display ="none";
     }          else if (language === "selected_all") {
-           let japane = document.getElementById("jp");
-           japane.style.display ="block";
+            j.style.display ="block";
            let englis = document.getElementById("eng");
            englis.style.display ="block";
     } 
